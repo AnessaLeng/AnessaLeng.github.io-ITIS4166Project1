@@ -4,6 +4,31 @@ body {
     min-height: 100vh;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.container-left-top {
+    top: 0;
+    left: 0;
+}
+
+.container-left-bottom {
+    background-image: url('images/AdobeStock_437161800.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: auto;
+}
+
+.container-right {
+    position: absolute;
+    right: 0;
+    top: 22%;
+    width: 300px;
+}
+
 header {
     display: flex;
     justify-content: space-between;

@@ -24,10 +24,30 @@
         </div>
     </header>
     <main>
-        <p>This is my new content.</p>
-        <div class="container left-top"></div>
-        <div class="container left-bottom"></div>
-        <div class="container right"></div>
+        <p>Have Manga to sell? List your items on our platform to connect with buyers around the world. Whether you are a professional seller or a casual fan looking to declutter, we make selling Manga easy and profitable.</p>
+        <form>
+            <label for="condition">Condition 
+                <select id="condition" required>
+                    <option>Select One</option>
+                    <option>New</option>
+                    <option>Like New</option>
+                    <option>Used</option>
+                </select>
+            </label><br>
+            <label for="title">Title
+                <input id="title" type="text" required> 
+            </label><br>
+            <label for="price">Price
+                <input id="price" type="number" required> 
+            </label><br>
+            <label for="details">Details
+                <input id="details" type="text" required> 
+            </label><br>
+            <label for="image">Image
+                <input id="image" type="file" required> 
+            </label><br>
+            <input id="submit" type="Submit" value="Submit">
+        </form>
     </main>
     <footer class="footer">
         <div class="footer" id="copyright">
