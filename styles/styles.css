@@ -25,6 +25,8 @@ a ::after {
 }
 
 #search input {
+    border-radius: 25px;
+    padding: 1px 1px;
     position: fixed;
     left: 50%;
     top: 0.25em;
