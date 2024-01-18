@@ -24,12 +24,17 @@ a ::after {
     flex: 1;
 }
 
+#logo img {
+    width: 180px;
+    height: auto;
+}
+
 #search input {
     border-radius: 25px;
     padding: 1px 1px;
     position: fixed;
     left: 50%;
-    top: 0.25em;
+    top: 5rem;
     transform: translate(-50%);
     width: 350px;
 }
