@@ -8,10 +8,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #77aca2;
 }
 
 a {
     text-decoration: none;
+    color: #e7ecef;
+}
+
+a ::after {
+    color: #ffe8d6;
 }
 
 #logo {
@@ -23,18 +29,19 @@ a {
 }
 
 #nav {
-
+    
 }
 
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    background-color: #468189;
+    
 }
 
 #copyright {
-
+    color: #e7ecef;
 }
 
 #socials {
