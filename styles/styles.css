@@ -1,45 +1,42 @@
 body {
-    height: 100%;
-    width: auto;
-    line-height: 1.8;
-    font-family: "sans-serif";
-
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    display: inline-flex;
-    vertical-align: middle;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 #logo {
-    padding-left: 0;
-    padding-right: 100%;
+
 }
 
 #search {
-    padding-left: 50;
-    padding-right: 50%;
+
 }
 
 #nav {
-    padding-left: 100;
-    padding-right: 50%;
+
 }
 
 footer {
-    display: inline-flex;
-    padding-top: 1%;
-    padding-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 #copyright {
-    padding-left: 0;
-    padding-right: 100%;
+
 }
 
 #socials {
-    padding-left: 100%;
-    padding-right: 0;
+
 }
