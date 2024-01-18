@@ -8,40 +8,50 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #77aca2;
+    background-color: #f8f9fa;
 }
 
 a {
     text-decoration: none;
-    color: #e7ecef;
+    color: #212529;
 }
 
 a ::after {
-    color: #ffe8d6;
+    color: #495057;
 }
 
 #logo {
-
+    flex: 1;
 }
 
-#search {
-
+#search input {
+    position: fixed;
+    left: 50%;
+    top: 0.25em;
+    transform: translate(-50%);
+    width: 350px;
 }
 
-#nav {
-    
+header #nav nav a {
+    padding: 0 5px;
+}
+
+main {
+    align-items: center;
+    text-align: center;
+    background-color: #dedbd2;
 }
 
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #468189;
+    background-color: #f8f9fa;
     
 }
 
 #copyright {
-    color: #e7ecef;
+    color: #212529;
 }
 
 #socials {
