@@ -15,21 +15,21 @@ main {
 }
 
 div.container-left-top h2 {
-    color: black !important;
+    color: rgb(255, 255, 255);
+    font-size: 5em;
 }
 
-div.container-left-top p, div.container-left-top h2 {
-    padding-top: 10%;
-    padding-left: 0;
-    padding-right: 50%;
-    color: rgb(192, 188, 230);
+div.container-left-top p {
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
 }
 
 .container-left-top {
-    background-image: url('/images/HD-wallpaper-ken-kaneki-animes-art-kaneki-ken-tokyo-ghoul-thumbnail.jpg'), url(/images/sololeveling-4231035.jpg);
-    background-repeat: no-repeat, no-repeat;
-    background-size: 50% 100%, 66%, 100%;
-    background-position: left, right;
+    background-image: url(/images/sololeveling-4231035.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: black;
     border: solid black 0.15em;
     height: auto;
@@ -46,8 +46,8 @@ div.container-left-top p, div.container-left-top h2 {
     border: solid black 0.15em;
     height: auto;
     width: 100%;
-    padding-top: 30%;
-    padding-bottom: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 header {
@@ -116,6 +116,10 @@ main#sell-page {
     padding-top: 20%;
     padding-bottom: 20%;
 }
+
+main#sell-page h3 {
+    font-size: 1.8rem;
+} 
 
 main#sell-page p {
     margin-left: 30%;
