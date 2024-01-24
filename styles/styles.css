@@ -11,28 +11,46 @@ main {
     align-items: center;
     text-align: center;
     background-color: #dedbd2;
+    font-size: 1.2em;
 }
 
 .container-left-top {
-    top: 0;
-    left: 0;
+    order: 1;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: solid black 0.15em;
+    height: auto;
+    width: 100%;
+    padding-top: 30%;
+    padding-bottom: 20%;
 }
 
 .container-left-bottom {
+    order: 3;
     background-image: url('/images/AdobeStock_437161800.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-top: auto;
+    border: solid black 0.15em;
     height: auto;
     width: 100%;
+    padding-top: 30%;
+    padding-bottom: 20%;
 }
 
 .container-right {
-    position: absolute;
-    right: 0;
-    top: 22%;
-    width: 300px;
+    order: 2;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: solid black 0.15em;
+    height: auto;
+    width: 100%;
+    padding-top: 30%;
+    padding-bottom: 20%;
 }
 
 header {
@@ -131,4 +149,9 @@ input[type="submit"] {
     height: 2.5em;
     color: white;
     background-color: rgb(241, 130, 55);
+}
+
+table#items-table td img {
+    width: 100%;
+    height: 8em;
 }
