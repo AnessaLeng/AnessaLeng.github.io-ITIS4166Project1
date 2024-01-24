@@ -14,35 +14,32 @@ main {
     font-size: 1.2em;
 }
 
+div.container-left-top h2 {
+    color: black !important;
+}
+
+div.container-left-top p, div.container-left-top h2 {
+    padding-top: 10%;
+    padding-left: 0;
+    padding-right: 50%;
+    color: rgb(192, 188, 230);
+}
+
 .container-left-top {
-    order: 1;
-    background-image: url('');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url('/images/HD-wallpaper-ken-kaneki-animes-art-kaneki-ken-tokyo-ghoul-thumbnail.jpg'), url(/images/sololeveling-4231035.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50% 100%, 66%, 100%;
+    background-position: left, right;
+    background-color: black;
     border: solid black 0.15em;
     height: auto;
     width: 100%;
     padding-top: 30%;
-    padding-bottom: 20%;
+    padding-bottom: 40%;
 }
 
 .container-left-bottom {
-    order: 3;
     background-image: url('/images/AdobeStock_437161800.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border: solid black 0.15em;
-    height: auto;
-    width: 100%;
-    padding-top: 30%;
-    padding-bottom: 20%;
-}
-
-.container-right {
-    order: 2;
-    background-image: url('');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
