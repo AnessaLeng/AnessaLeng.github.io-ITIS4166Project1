@@ -14,19 +14,19 @@ main {
     font-size: 1.2em;
 }
 
-div.container-left-top h2 {
+div.container-top h2 {
     color: rgb(255, 255, 255);
     font-size: 5em;
 }
 
-div.container-left-top p {
+div.container-top p {
     padding-left: 20%;
     padding-right: 20%;
     font-size: 2em;
     color: rgb(255, 255, 255);
 }
 
-.container-left-top {
+.container-top {
     background-image: url(/images/sololeveling-4231035.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,7 +38,7 @@ div.container-left-top p {
     padding-bottom: 40%;
 }
 
-.container-left-bottom {
+.container-bottom {
     background-image: url('/images/AdobeStock_437161800.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,6 +48,7 @@ div.container-left-top p {
     width: 100%;
     padding-top: 10%;
     padding-bottom: 10%;
+    font-size: 1.55em;
 }
 
 header {
@@ -71,22 +72,23 @@ a ::after {
 }
 
 #logo img {
-    width: 180px;
+    width: 220px;
     height: auto;
 }
 
 #search input {
     border-radius: 25px;
     padding: 1px 1px;
-    position: fixed;
+    position: absolute;
     left: 50%;
-    top: 5rem;
+    top: 6.5rem;
     transform: translate(-50%);
     width: 350px;
 }
 
 header #nav nav a {
-    padding: 0 5px;
+    padding: 0 22px;
+    font-size: 20px;
 }
 
 footer {
@@ -152,7 +154,60 @@ input[type="submit"] {
     background-color: rgb(241, 130, 55);
 }
 
-table#items-table td img {
+main#items-page {
+    background-image: url('/images/AdobeStock_592460065.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
     width: 100%;
-    height: 8em;
+    padding-top: 8%;
+    padding-bottom: 10%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.item {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: solid 0.1em rgb(248, 241, 241);
+}
+
+div.item h3.title {
+    font-size: 20px;
+    margin-bottom: 2%;
+    margin-top: 5%;
+    font-weight: bolder;
+}
+
+div.item p.price {
+    color: rgb(25, 25, 155);
+    font-weight: bold;
+}
+
+div.item p.offers, div.item p.price {
+    font-size: 16px;
+    display: inline-block;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+div.item p.condition {
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 5%;
+}
+
+div.item img {
+    width: 100%;
+    height: 13em;
+    border-radius: 2%;
 }
