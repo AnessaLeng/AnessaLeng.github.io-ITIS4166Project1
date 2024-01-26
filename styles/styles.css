@@ -27,7 +27,7 @@ div.container-top p {
 }
 
 .container-top {
-    background-image: url('/images/sololeveling-4231035.jpg');
+    background-image: url('../images/sololeveling-4231035.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
@@ -39,7 +39,7 @@ div.container-top p {
 }
 
 .container-bottom {
-    background-image: url('/images/AdobeStock_437161800.jpeg');
+    background-image: url('../images/AdobeStock_437161800.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -111,7 +111,7 @@ footer {
 }
 
 main#sell-page {
-    background-image: url('/images/AdobeStock_592460176.jpeg');
+    background-image: url('../images/AdobeStock_592460176.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -158,7 +158,7 @@ input[type="submit"] {
 }
 
 main#items-page {
-    background-image: url('/images/AdobeStock_592460065.jpeg');
+    background-image: url('../images/AdobeStock_592460065.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -228,7 +228,7 @@ div.item img {
 }
 
 main#item-page {
-    background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('/images/star-clusters-rosette-nebula-star-galaxies-73873.jpeg');
+    background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('../images/star-clusters-rosette-nebula-star-galaxies-73873.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -280,7 +280,7 @@ span.bold {
 
 main#item-page button {
     border-radius: 25px;
-    width: 180px;
+    width: 130px;
     background-color: yellow;
     color: black;
     margin-top: 3%;
