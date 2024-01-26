@@ -67,6 +67,10 @@ a ::after {
     color: #495057;
 }
 
+a :hover {
+    color: #06529e;
+}
+
 #logo {
     flex: 1;
 }
