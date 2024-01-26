@@ -27,7 +27,7 @@ div.container-top p {
 }
 
 .container-top {
-    background-image: url(/images/sololeveling-4231035.jpg);
+    background-image: url('/images/sololeveling-4231035.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
