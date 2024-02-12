@@ -1,0 +1,18 @@
+{
+  "name": "anessaleng.github.io-itis4166project1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anessa Leng",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "luxon": "^3.4.4",
+    "morgan": "^1.10.0",
+    "uuid": "^9.0.1"
+  }
+}
