@@ -6,6 +6,7 @@
             <div id="picture" name="image"><img src="<%= manga.image%>" alt="<%= manga.title%>"></div>
             <div class="description">
                 <h3 class="description" id="title" name="title"><%= manga.title%></h3>
+                <p class="description" id="active" name="active">Status: <span class="bold"><%if (manga.active) {%>Active<%} else {%>Not Active<%}%></span></p>
                 <p class="description" id="condition" name="condition">Condition: <span class="bold"><%= manga.condition%></span></p>
                 <p class="description" id="price" name="price, totalOffers">Price: <span class="bold">$<%= manga.price%> | <%= manga.totalOffers%> offers</span></p>
                 <p class="description" id="seller" name="seller">Seller: <span class="bold"><%= manga.seller%></span></p>

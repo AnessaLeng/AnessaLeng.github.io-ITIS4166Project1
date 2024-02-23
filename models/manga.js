@@ -10,7 +10,7 @@ const collection = [
         details: 'The manga follows Light Yagami, a genius high school student who discovers a mysterious notebook: the "Death Note", which belonged to the shinigami Ryuk, and grants the user the supernatural ability to kill anyone whose name is written in its pages.',
         image: '../images/death-note2281c3dc843d2a2e289673eb2589f143.jpg',
         totalOffers: 0,
-        active: false
+        active: true
     },
     {
         id: '2',
@@ -32,7 +32,7 @@ const collection = [
         details: 'Naruto is an orphan who wants to be acknowledged by his village and become the Hokage, the strongest and most respected ninja. He has a secret: he is the host of a powerful demon fox that attacked his village many years ago. The series follows his adventures and challenges as he trains and fights with his friends and enemies.',
         image: '../images/naruto-239ce62a32c1914313eb8daf2b91756b.jpg',
         totalOffers: 0,
-        active: false
+        active: true
     },
     {
         id: '4',
@@ -51,7 +51,7 @@ const collection = [
         seller: 'Tomohiro',
         condition: 'Slightly Used',
         price: 15.99,
-        details: 'One-Punch Man tells the manga of Saitama, a superhero who, because he can defeat any opponent with a single punch, grows bored from a lack of challenge. He joins the Hero Association, a group of professional heroes who protect the world from various threats, and meets other heroes and villains along the way. The series is a parody and homage to the superhero genre, with humor, action, and satire',
+        details: 'One Punch Man tells the manga of Saitama, a superhero who, because he can defeat any opponent with a single punch, grows bored from a lack of challenge. He joins the Hero Association, a group of professional heroes who protect the world from various threats, and meets other heroes and villains along the way. The series is a parody and homage to the superhero genre, with humor, action, and satire',
         image: '../images/one-punchmanOIP.jpeg',
         totalOffers: 2,
         active: true

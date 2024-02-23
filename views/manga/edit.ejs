@@ -1,5 +1,6 @@
 <%- include('../partials/header.ejs')%>
     <main id="edit-page">
+        <h4>Edit Form</h4>
         <form id="edit-form" method="POST" action="/collection/<%= manga.id%>?_method=PUT" enctype="multipart/form-data">
             <label for="condition">Condition 
                 <input id="condition" name="condition" type="text" value="<%= manga.condition%>"> 

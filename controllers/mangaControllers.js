@@ -6,12 +6,12 @@ exports.search = (req, res, next) => {
     let collection = model.find();
     let sortedCollection = collection.filter(
         manga => 
-        manga.title.toLowerCase().includes(query.toLowerCase()) ||
-        manga.details.toLowerCase().includes(query.toLowerCase())
+        manga.title.toLowerCase().includes(query.toLowerCase().trim()) ||
+        manga.details.toLowerCase().includes(query.toLowerCase().trim())
     );
-
+    sortedCollection = _.filter(sortedCollection, { active: true })
     sortedCollection = _.sortBy(sortedCollection, 'price');
-    
+        
     if (sortedCollection) {
         res.render('./search', { sortedCollection });
     } else {
@@ -64,7 +64,7 @@ exports.show = (req, res, next) => {
     if (manga) {
         res.render('./manga/item', {manga});
     } else {
-        let err = new Error('Cannot find manga with id ' + id);
+        let err = new Error('Cannot find manga with ID ' + id + '.');
         err.status = 404;
         next(err);
     }
@@ -76,7 +76,7 @@ exports.edit = (req, res, next) => {
     if (manga) {
         res.render('./manga/edit', {manga});
     } else {
-        let err = new Error('Cannot find manga with id ' + id);
+        let err = new Error('Cannot find manga with ID ' + id + '. Unable to edit.');
         err.status = 404;
         next(err);
     }
@@ -95,7 +95,7 @@ exports.update = (req, res, next) => {
     if (model.updateById(id, manga)) {
         res.redirect('/collection/' + id);
     } else {
-        let err = new Error('Cannot find manga with id ' + id);
+        let err = new Error('Cannot find manga with ID ' + id + '. Unable to update.');
         err.status = 404;
         next(err);
     }
@@ -106,7 +106,7 @@ exports.delete = (req, res, next) => {
     if (model.deleteById(id)) {
         res.redirect('/collection');
     } else {
-        let err = new Error('Cannot find manga with id ' + id);
+        let err = new Error('Cannot find manga with ID ' + id + '. Unable to delete.');
         err.status = 404;
         next(err);
     }
