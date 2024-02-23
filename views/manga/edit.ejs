@@ -1,0 +1,25 @@
+<%- include('../partials/header.ejs')%>
+    <main id="edit-page">
+        <form id="edit-form" method="POST" action="/collection/<%= manga.id%>?_method=PUT" enctype="multipart/form-data">
+            <label for="condition">Condition 
+                <input id="condition" name="condition" type="text" value="<%= manga.condition%>"> 
+            </label><br><br>
+            <label for="title">Title
+                <input id="title" name="title" type="text" value="<%= manga.title%>"> 
+            </label><br><br>
+            <label for="price">Price
+                <input id="price" name="price" type="number" value="<%= manga.price%>"> 
+            </label><br><br>
+            <label for="details">Details
+                <textarea id="details" name="details"><%= manga.details%></textarea>
+            </label><br><br>
+            <label for="image">Image
+                <input id="image" name="image" type="file" src="<%= manga.image%>"> 
+            </label><br><br>
+            <label for="seller">Seller Name
+                <input id="seller" name="seller" type="text" value="<%= manga.seller%>">
+            </label><br><br><br>
+            <input id="submit" type="Submit" value="Submit">
+        </form>
+    </main>
+<%- include('../partials/footer.ejs')%>

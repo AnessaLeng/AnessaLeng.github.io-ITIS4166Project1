@@ -1,0 +1,26 @@
+<%- include('../partials/header.ejs')%>
+    <main id="items-page">
+        <h2>Browse our Collection</h2>
+        <form action="/collection/all" method="GET">
+            <button id="submit" type="submit">Browse All</button>
+        </form>
+        <p id="information">Enjoy our digital reading platform, designed to provide an immersive reading experience. With high-resolution scans and a user-friendly interface, you can read your favorite Manga anytime, anywhere.</p>
+        <div class="item-container">
+            <%if(sortedCollection.length) {%>
+                <%sortedCollection.forEach(manga=> {%>
+                    <div class="item">
+                        <a href="/collection/<%= manga.id%>">
+                            <img src="<%= manga.image%>" alt="<%= manga.title%>" name="image">
+                            <h3 class="title" name="title"><%= manga.title%></h3>
+                            <p class="condition" name="condition"><%= manga.condition%></p>
+                            <p class="price" name="price">$<%= manga.price%></p>
+                            <p class="offers" name="totalOffers"><%= manga.totalOffers%> offers</p>
+                        </a>
+                    </div>
+                <%});%>
+            <%} else {%>
+                <p>There is nothing to display at the moment.</p>
+            <%}%>
+        </div>
+    </main>
+<%- include('../partials/footer.ejs')%>

@@ -1,5 +1,9 @@
 <%- include('./partials/header.ejs')%>
     <main>
-        
+        <div class="container-top">
+            <h2><%= error.status%> Error</h2> 
+            <p><%= error.message%></p>
+        </div>
+        <div class="container-bottom"></div>
     </main>
 <%- include('./partials/footer.ejs')%>

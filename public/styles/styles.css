@@ -34,8 +34,8 @@ div.container-top p {
     border: solid black 0.15em;
     height: auto;
     width: 100%;
-    padding-top: 30%;
-    padding-bottom: 40%;
+    padding-top: 6%;
+    padding-bottom: 10%;
 }
 
 .container-bottom {
@@ -46,7 +46,7 @@ div.container-top p {
     border: solid black 0.15em;
     height: auto;
     width: 100%;
-    padding-top: 10%;
+    padding-top: 8%;
     padding-bottom: 10%;
     font-size: 1.55em;
 }
@@ -82,7 +82,7 @@ a :hover {
 
 #search input {
     border-radius: 25px;
-    padding: 1px 1px;
+    padding: 5px 12px;
     position: absolute;
     left: 50%;
     top: 6.5rem;
@@ -110,19 +110,19 @@ footer {
     padding: 0 2.3px;
 }
 
-main#sell-page {
+main#sell-page, main#edit-page {
     background-image: url('../images/AdobeStock_592460176.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: auto;
     width: 100%;
-    color: white;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    color: rgb(255, 255, 255);
+    padding-top: 8%;
+    padding-bottom: 10%;
 }
 
-main#sell-page h2, main#items-page h2 {
+main#sell-page h2, main#items-page h2, main#edit-page {
     font-size: 2rem;
 } 
 
@@ -133,7 +133,7 @@ main#sell-page p {
     font-size: 1.3rem;
 }
 
-form#sell-form {
+form#sell-form, form#edit-form {
     text-align: left !important;
     font-size: 1.2rem;
 }
@@ -142,19 +142,32 @@ input:not(input[type="submit"]), select {
     box-sizing: border-box;
     width: 100%;
     height: 2.2em;
+    border-radius: 25px;
+    padding: 4px 10px;
 }
 
 textarea {
     height: 6em;
     box-sizing: border-box;
     width: 100%;
+    border-radius: 25px;
+    padding: 4px 10px;
 }
 
 input[type="submit"] {
     width: 100%;
     height: 2.5em;
+    font-weight: bold;
     color: white;
     background-color: rgb(241, 130, 55);
+    border-radius: 25px;
+}
+
+button[id="submit"] {
+    background-color: rgb(8, 94, 255);
+    border-radius: 25px;
+    padding: 7px 20px;
+    font-weight: bold;
 }
 
 main#items-page {
@@ -164,8 +177,8 @@ main#items-page {
     background-position: center;
     height: auto;
     width: 100%;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 8%;
+    padding-bottom: 10%;
 }
 
 p#information{
@@ -188,7 +201,9 @@ div.item {
     margin-bottom: 30px;
     margin-left: 20px;
     margin-right: 25px;
-    border: solid 0.1em rgb(248, 241, 241);
+    background-color: rgba(8, 94, 255, 0.329);
+    border: solid 0.1em rgb(52, 134, 201);
+    border-radius: 30px;
 }
 
 div.item h3.title {
@@ -201,7 +216,7 @@ div.item h3.title {
 }
 
 div.item p.price {
-    color: rgb(25, 25, 155);
+    color: rgb(209, 0, 0);
     font-weight: bold;
 }
 
@@ -224,7 +239,7 @@ div.item p.condition {
 div.item img {
     width: 100%;
     height: 13em;
-    border-radius: 2%;
+    border-radius: 25px;
 }
 
 main#item-page {
@@ -238,7 +253,7 @@ main#item-page {
 }
 
 main#item-page h2 {
-    margin-top: 15%;
+    margin-top: 8%;
     color: yellow;
 }
 
@@ -252,18 +267,20 @@ main#item-page div.container-item {
     grid-template-columns: 30% auto;
     align-items: center;
     gap: 20%;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }
 
 main#item-page img {
     margin-left: 100%;
     width: 50%;
     height: auto;
+    border-radius: 25px;
 }
 
 .description {
     font-size: 15px;
     text-align: left;
+    margin-right: 20%;
 }
 
 .description#title {

@@ -1,5 +1,8 @@
 const express = require('express');
 const morgan = require('morgan');
+const methodOverride = require('method-override');
+const mangaRoutes = require('./routes/mangaRoutes');
+const searchRoutes = require('./routes/searchRoutes');
 
 const app = express();
 
@@ -9,11 +12,17 @@ app.set('view engine', 'ejs');
 
 app.use(express.static('public'));
 app.use(express.urlencoded({extended: true}));
+app.use(express.json());
 app.use(morgan('tiny'));
+app.use(methodOverride('_method'));
 
 app.get('/', (req, res) => {
     res.render('index');
 });
+
+app.use('/search', searchRoutes);
+
+app.use('/collection', mangaRoutes);
 
 app.use((req, res, next) => {
     let err = new Error('The server cannot locate ' + req.url);
